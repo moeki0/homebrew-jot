@@ -5,6 +5,8 @@ class Jot < Formula
   sha256 "a471797b652001b7fd02ee5776b17eb127283043ad0da08db090d3db440c5723"
   license "MIT"
 
+  depends_on "node" => :build
+
   resource "bun" do
     on_arm do
       url "https://github.com/oven-sh/bun/releases/download/bun-v1.3.12/bun-darwin-aarch64.zip"
