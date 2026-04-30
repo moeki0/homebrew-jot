@@ -1,8 +1,8 @@
 class Jot < Formula
   desc "Channel-based jot/notes server with Claude Code integration"
   homepage "https://github.com/moeki0/jot"
-  url "https://github.com/moeki0/jot/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "fc5557ae1f0beae6a14ae760dfa58efbf69c8624a31c15619ffbe14e06454360"
+  url "https://github.com/moeki0/jot/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "f67ed2163b5521676a11853fa8b293cbaf9470ceb1b8d03e4cbc9bfb9d05c4d5"
   license "MIT"
 
   depends_on "node" => :build
