@@ -1,8 +1,8 @@
 class Jot < Formula
   desc "Channel-based jot/notes server with Claude Code integration"
   homepage "https://github.com/moeki0/jot"
-  url "https://github.com/moeki0/jot/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "f67ed2163b5521676a11853fa8b293cbaf9470ceb1b8d03e4cbc9bfb9d05c4d5"
+  url "https://github.com/moeki0/jot/archive/refs/tags/v0.4.1.tar.gz"
+  sha256 "b37b6050b8e24c2981e6a53c313abb74e69c6130772c2e8d586fa12a1c3bb5f1"
   license "MIT"
 
   depends_on "node" => :build
@@ -48,6 +48,9 @@ class Jot < Formula
 
       Register Claude Code hooks (optional):
         jot claude hook <stop|user-prompt|tool|notify|session-start>
+
+      Start the Pi bridge (optional):
+        jot pi bridge
     EOS
   end
 
