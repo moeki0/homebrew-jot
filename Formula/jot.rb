@@ -1,8 +1,8 @@
 class Jot < Formula
   desc "Channel-based jot/notes server with Claude Code integration"
   homepage "https://github.com/moeki0/jot"
-  url "https://github.com/moeki0/jot/archive/refs/tags/v0.4.2.tar.gz"
-  sha256 "af8fbb5320f4442d642d2fed5a2cd91dd07302108951fb76eb592a39097bfb4f"
+  url "https://github.com/moeki0/jot/archive/refs/tags/v0.4.3.tar.gz"
+  sha256 "2fafee81e43d1c3aa712b219305d7f264da0da1a7000563ae4fcc37473e766d1"
   license "MIT"
 
   depends_on "node" => :build
@@ -29,7 +29,7 @@ class Jot < Formula
     system bun, "install", "--frozen-lockfile"
     system bun, "run", "build"
 
-    libexec.install "src", "public", "package.json", "bun.lock", "node_modules"
+    libexec.install "src", "public", "extensions", "package.json", "bun.lock", "node_modules"
     libexec.install "bun"
 
     (bin/"jot").write <<~SH
